@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang Web Cơ Bản</title>
+    <style>
+        body {
+            background-image: url("images/bg.jpg");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fade-in 1s ease-in-out;
+        }
+        
+        .container h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .container img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            max-width: 200px;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .decorative-line {
+            width: 100%;
+            height: 2px;
+            background-color: #333;
+            margin-bottom: 20px;
+        }
+
+        .decorative-line.dashed {
+            background-image: linear-gradient(to right, #333 33%, transparent 0%);
+            background-position: bottom;
+            background-size: 10px 2px;
+            background-repeat: repeat-x;
+        }
+
+        .decorative-text {
+            text-align: center;
+            font-size: 18px;
+            color: #888;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .decorative-text:before,
+        .decorative-text:after {
+            content: "";
+            width: 30%;
+            height: 1px;
+            background-color: #333;
+            position: absolute;
+            top: 8px;
+        }
+
+        .decorative-text:before {
+            left: 0;
+        }
+
+        .decorative-text:after {
+            right: 0;
+        }
+
+        /* Color customizations */
+        .container h2:nth-child(2) {
+            color: green; /* MSSV: 22130142 color */
+        }
+
+        .container h2:nth-child(3) {
+            color: brown; /* Phan Xuân Lãnh color */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Trường ĐH Nông Lâm</h2>
+        <h2>MSSV: 22130142</h2>
+        <h2>Tên: Phan Xuân Lãnh</h2>
+        <div class="decorative-line"></div>
+        <img src="images/jk.jpg" alt="Hình ảnh">
+        <div class="decorative-line dashed"></div>
+        <div class="decorative-text">Trang web cá nhân của tôi</div>
+    </div>
+</body>
+</html>
